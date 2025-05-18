@@ -1,0 +1,391 @@
+.aboutPage {
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.mainIcon {
+  width: 80px;
+  height: 80px;
+  color: #e63946;
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  animation: float 3s ease-in-out infinite;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #555;
+  font-style: italic;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-left: 1rem;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background-color: #e63946;
+    }
+  }
+}
+
+.sectionIcon {
+  width: 40px;
+  height: 40px;
+  color: #e63946;
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.aboutSection {
+  margin-bottom: 4rem;
+}
+
+.aboutContent {
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1.5rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.valuesSection {
+  margin-bottom: 4rem;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.valueCard {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    
+    .valueIcon {
+      animation: spin 1s ease-in-out;
+    }
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+}
+
+.valueIconContainer {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(230, 57, 70, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.valueIcon {
+  width: 35px;
+  height: 35px;
+  color: #e63946;
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.achievementsSection {
+  margin-bottom: 4rem;
+}
+
+.achievementsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.achievementItem {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateX(5px);
+    
+    .achievementIcon {
+      svg {
+        animation: bounce 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+.achievementIcon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(230, 57, 70, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  
+  svg {
+    width: 25px;
+    height: 25px;
+    color: #e63946;
+    
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  }
+}
+
+.achievementContent {
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+}
+
+.contactSection {
+  margin-bottom: 4rem;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.contactCard {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0.5rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contactIconContainer {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(230, 57, 70, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.contactIcon {
+  width: 35px;
+  height: 35px;
+  color: #e63946;
+  animation: wave 3s ease-in-out infinite;
+}
+
+.subscriptionCta {
+  background-color: #1d3557;
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: white;
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    opacity: 0.9;
+  }
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: #e63946;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: darken(#e63946, 10%);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  @keyframes pulse-button {
+    0% {
+      box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(230, 57, 70, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(230, 57, 70, 0);
+    }
+  }
+  
+  animation: pulse-button 2s infinite;
+}

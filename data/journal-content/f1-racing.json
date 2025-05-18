@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {
+      "title": "Introducción",
+      "content": "F1 Racing es nuestra revista dedicada al mundo de la Fórmula 1. Cubrimos cada Gran Premio con un nivel de detalle inigualable."
+    },
+    {
+      "title": "Contenido habitual",
+      "items": [
+        "Análisis técnico de los monoplazas",
+        "Entrevistas con pilotos, ingenieros y directores de equipo",
+        "Historia de escuderías y circuitos legendarios",
+        "Avances tecnológicos en la F1",
+        "Predicciones y análisis de rendimiento"
+      ]
+    },
+    {
+      "title": "Nuestro enfoque",
+      "content": "En F1 Racing combinamos la pasión por el automovilismo con un análisis técnico detallado. Nuestros periodistas especializados desglosan cada aspecto del deporte para ofrecer una perspectiva única que no encontrarás en ningún otro medio."
+    },
+    {
+      "title": "Periodicidad",
+      "content": "Nuestra revista se publica mensualmente con ediciones especiales antes y después de las carreras más emblemáticas del calendario."
+    }
+  ]
+}

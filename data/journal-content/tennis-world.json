@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {
+      "title": "Introducción",
+      "content": "Tennis World es la revista definitiva para los amantes del tenis. Cubrimos todos los Grand Slams y torneos ATP y WTA con análisis detallados."
+    },
+    {
+      "title": "Contenido habitual",
+      "items": [
+        "Análisis técnicos de partidos destacados",
+        "Entrevistas exclusivas con tenistas",
+        "Reportajes sobre la evolución del tenis",
+        "Seguimiento de jóvenes promesas españolas",
+        "Consejos de entrenamiento y técnica"
+      ]
+    },
+    {
+      "title": "Nuestro enfoque",
+      "content": "En Tennis World nos centramos tanto en el tenis profesional como en consejos prácticos para jugadores amateurs. Nuestros expertos analizan cada aspecto del juego, desde la técnica hasta la preparación mental."
+    },
+    {
+      "title": "Periodicidad",
+      "content": "Publicamos mensualmente con ediciones especiales durante los torneos de Grand Slam, ofreciendo cobertura extendida y análisis en profundidad."
+    }
+  ]
+}

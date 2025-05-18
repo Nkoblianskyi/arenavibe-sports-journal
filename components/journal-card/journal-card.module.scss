@@ -1,0 +1,47 @@
+.journalCard {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl;
+}
+
+.journalImage {
+  @apply relative h-64 overflow-hidden;
+  
+  .image {
+    @apply object-cover w-full h-full transition-transform duration-500;
+  }
+  
+  &:hover .image {
+    @apply scale-105;
+  }
+}
+
+.journalContent {
+  @apply p-6;
+}
+
+.journalTitle {
+  @apply text-xl font-bold mb-2;
+}
+
+.journalDescription {
+  @apply text-gray-700 dark:text-gray-300 mb-4;
+}
+
+.journalMeta {
+  @apply flex items-center justify-between mb-4;
+}
+
+.journalFrequency {
+  @apply text-sm text-gray-500 dark:text-gray-400;
+}
+
+.journalLink {
+  @apply flex items-center text-red-600 dark:text-red-500 font-medium hover:text-red-700 dark:hover:text-red-400 transition-colors duration-200;
+  
+  svg {
+    @apply ml-1 transition-transform duration-200;
+  }
+  
+  &:hover svg {
+    @apply transform translate-x-1;
+  }
+}

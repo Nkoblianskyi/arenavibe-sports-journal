@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {
+      "title": "Introducción",
+      "content": "Mundo Fitness es tu guía completa para el culturismo, fitness y vida saludable, con consejos prácticos y rutinas efectivas."
+    },
+    {
+      "title": "Contenido habitual",
+      "items": [
+        "Rutinas de entrenamiento para todos los niveles",
+        "Planes nutricionales personalizados",
+        "Entrevistas con atletas de élite",
+        "Suplementación y recuperación",
+        "Tendencias en fitness y bienestar"
+      ]
+    },
+    {
+      "title": "Nuestro enfoque",
+      "content": "Combinamos ciencia y experiencia práctica para ofrecer contenido que realmente funciona, respaldado por profesionales del sector y estudios científicos."
+    },
+    {
+      "title": "Periodicidad",
+      "content": "Cada mes traemos nuevas rutinas, recetas saludables y consejos de expertos para ayudarte a alcanzar tus objetivos fitness."
+    }
+  ]
+}

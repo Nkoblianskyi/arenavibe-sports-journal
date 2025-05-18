@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {
+      "title": "Introducción",
+      "content": "Basket Life es nuestra revista dedicada al mundo del baloncesto. Cubrimos Euroliga y la NBA con el mismo nivel de detalle y pasión."
+    },
+    {
+      "title": "Contenido habitual",
+      "items": [
+        "Análisis de los partidos destacados de la ACB y Euroliga",
+        "Seguimiento especial de jugadores españoles en la NBA",
+        "Entrevistas con estrellas nacionales e internacionales",
+        "Reportajes sobre la historia del baloncesto",
+        "Secciones técnicas sobre tácticas y estrategias"
+      ]
+    },
+    {
+      "title": "Nuestro enfoque",
+      "content": "En Basket Life combinamos la pasión por el baloncesto con un análisis riguroso. Nuestro equipo incluye ex jugadores y entrenadores que aportan una visión única del juego."
+    },
+    {
+      "title": "Periodicidad",
+      "content": "Cada número incluye pósters de alta calidad de las estrellas del momento, perfectos para los aficionados de todas las edades."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+.interviewPage {
+  padding: 3rem 0;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #555;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: #e63946;
+  }
+}
+
+.interviewHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.interviewImage {
+  flex-shrink: 0;
+  
+  @media (min-width: 768px) {
+    width: 400px;
+  }
+}
+
+.ownerImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.interviewIntro {
+  flex: 1;
+}
+
+.interviewTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.ownerPosition {
+  font-size: 1.2rem;
+  color: #e63946;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.ownerBio {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.interviewContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.interviewExcerpt {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #333;
+  font-style: italic;
+  position: relative;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  
+  &::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 5rem;
+    color: #e63946;
+    opacity: 0.3;
+    line-height: 1;
+  }
+  
+  p {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.interviewQuestions {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.interviewItem {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2rem;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.question {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.answer {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  
+  p {
+    margin-bottom: 1rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

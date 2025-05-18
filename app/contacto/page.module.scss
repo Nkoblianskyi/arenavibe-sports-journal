@@ -1,0 +1,157 @@
+.contactPage {
+  @apply pb-16;
+}
+
+// Hero Section
+.hero {
+  @apply py-16 bg-gradient-to-br from-red-600 to-red-800 text-white text-center;
+}
+
+.heroTitle {
+  @apply text-4xl md:text-5xl font-bold mb-4;
+}
+
+.heroSubtitle {
+  @apply text-xl max-w-3xl mx-auto text-red-100;
+}
+
+// Contact Content
+.contactContent {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-12;
+}
+
+// Contact Info
+.contactInfo {
+  @apply space-y-8;
+}
+
+.infoTitle {
+  @apply text-2xl font-bold mb-4;
+}
+
+.infoDescription {
+  @apply text-gray-700 dark:text-gray-300 mb-8;
+}
+
+.contactDetails {
+  @apply space-y-6;
+}
+
+.contactItem {
+  @apply flex items-start;
+  
+  .contactIcon {
+    @apply text-red-600 mr-4 mt-1 flex-shrink-0;
+  }
+  
+  h3 {
+    @apply font-bold mb-1;
+  }
+  
+  a, address {
+    @apply text-gray-700 dark:text-gray-300 not-italic hover:text-red-600 dark:hover:text-red-500 transition-colors duration-200;
+  }
+}
+
+.contactImage {
+  @apply my-8;
+  
+  .image {
+    @apply rounded-lg shadow-lg;
+  }
+}
+
+.officeHours {
+  @apply bg-gray-100 dark:bg-gray-800 p-6 rounded-lg;
+  
+  h3 {
+    @apply font-bold mb-4;
+  }
+  
+  p {
+    @apply text-gray-700 dark:text-gray-300 mb-2;
+  }
+}
+
+// Contact Form
+.contactForm {
+  @apply bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md;
+}
+
+.formTitle {
+  @apply text-2xl font-bold mb-6;
+}
+
+.formGroup {
+  @apply mb-4;
+}
+
+.formLabel {
+  @apply block text-sm font-medium mb-1;
+}
+
+.formInput, .formSelect, .formTextarea {
+  @apply w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600;
+}
+
+.formTextarea {
+  @apply resize-none;
+}
+
+.required {
+  @apply text-red-600;
+}
+
+.errorMessage {
+  @apply text-red-600 text-sm mb-4;
+}
+
+.submitButton {
+  @apply w-full bg-red-600 text-white py-3 rounded-md font-medium hover:bg-red-700 transition-colors duration-200 disabled:opacity-70 disabled:cursor-not-allowed;
+}
+
+.submitText {
+  @apply flex items-center justify-center;
+  
+  svg {
+    @apply ml-2;
+  }
+}
+
+.submitting {
+  @apply flex items-center justify-center;
+  
+  &::after {
+    content: '';
+    @apply w-4 h-4 ml-2 rounded-full border-2 border-white border-t-transparent animate-spin;
+  }
+}
+
+.successMessage {
+  @apply text-center py-8;
+  
+  h3 {
+    @apply text-xl font-bold mb-2;
+  }
+  
+  p {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+}
+
+.successIcon {
+  @apply text-green-500 mx-auto mb-4;
+}
+
+// Map Section
+.mapSection {
+  @apply mt-16;
+}
+
+.mapWrapper {
+  @apply rounded-lg overflow-hidden shadow-lg;
+}
+
+.map {
+  @apply w-full h-[450px];
+}

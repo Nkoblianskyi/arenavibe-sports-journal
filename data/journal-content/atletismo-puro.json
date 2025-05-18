@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {
+      "title": "Introducción",
+      "content": "Atletismo Puro es la revista especializada en todas las disciplinas atléticas, desde carreras hasta lanzamientos y saltos."
+    },
+    {
+      "title": "Contenido habitual",
+      "items": [
+        "Análisis de competiciones internacionales",
+        "Perfiles de atletas destacados",
+        "Técnicas de entrenamiento avanzadas",
+        "Preparación física y mental",
+        "Cobertura de eventos olímpicos"
+      ]
+    },
+    {
+      "title": "Nuestro enfoque",
+      "content": "Nos enfocamos en el atletismo desde una perspectiva técnica y humana, destacando tanto el rendimiento como las historias personales detrás de cada atleta."
+    },
+    {
+      "title": "Periodicidad",
+      "content": "Nuestra publicación bimestral ofrece contenido de calidad con fotografías espectaculares de los mejores momentos atléticos."
+    }
+  ]
+}

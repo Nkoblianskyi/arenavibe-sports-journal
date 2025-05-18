@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Fútbol Total",
+    "slug": "futbol-total",
+    "description": "La revista definitiva para los amantes del fútbol",
+    "coverImage": "/96b20bdd7508bf802f105eea8c32944b.jpg",
+    "frequency": "Mensual",
+    "price": 4.99
+  },
+  {
+    "id": 2,
+    "title": "Basket Life",
+    "slug": "basket-life",
+    "description": "Todo sobre el mundo del baloncesto nacional e internacional",
+    "coverImage": "/basketball-magazine-cover.png",
+    "frequency": "Mensual",
+    "price": 4.99
+  },
+  {
+    "id": 3,
+    "title": "F1 Racing",
+    "slug": "f1-racing",
+    "description": "La revista líder en Fórmula 1 y deportes de motor",
+    "coverImage": "/formula-1-magazine-cover.png",
+    "frequency": "Mensual",
+    "price": 5.99
+  },
+  {
+    "id": 4,
+    "title": "Tennis World",
+    "slug": "tennis-world",
+    "description": "Análisis, entrevistas y cobertura de los grandes torneos",
+    "coverImage": "/tennis-magazine-cover.png",
+    "frequency": "Mensual",
+    "price": 4.5
+  },
+  {
+    "id": 5,
+    "title": "Atletismo Puro",
+    "slug": "atletismo-puro",
+    "description": "La revista especializada en atletismo y pruebas olímpicas",
+    "coverImage": "/athletics-magazine-cover.png",
+    "frequency": "Bimestral",
+    "price": 3.99
+  },
+  {
+    "id": 6,
+    "title": "Mundo Fitness",
+    "slug": "mundo-fitness",
+    "description": "Todo sobre culturismo, fitness y vida saludable",
+    "coverImage": "/c5194796ec65d916a6e9d39ff95a54df.jpg",
+    "frequency": "Mensual",
+    "price": 4.75
+  }
+]
+  

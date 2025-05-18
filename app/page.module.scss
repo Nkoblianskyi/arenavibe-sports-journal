@@ -1,0 +1,183 @@
+.homePage {
+  @apply pb-16;
+}
+
+// Hero Section
+.hero {
+  @apply py-16 md:py-24 bg-gradient-to-br from-red-600 to-red-800 text-white;
+}
+
+.heroContent {
+  @apply flex flex-col md:flex-row items-center gap-8 md:gap-12;
+}
+
+.heroText {
+  @apply flex-1;
+}
+
+.heroTitle {
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight;
+}
+
+.heroSubtitle {
+  @apply text-xl md:text-2xl mb-8 text-red-100;
+}
+
+.heroActions {
+  @apply flex flex-wrap gap-4;
+}
+
+.heroImage {
+  @apply flex-1 flex justify-center;
+}
+
+// About Section
+.about {
+  @apply bg-white dark:bg-gray-900;
+}
+
+.aboutContent {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8 items-center;
+}
+
+.aboutText {
+  @apply space-y-4;
+  
+  p {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+}
+
+.aboutAction {
+  margin-top: 1.5rem;
+  text-align: center;
+  
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+
+// Journals Section
+.journals {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+.journalsIntro {
+  @apply text-center max-w-3xl mx-auto mb-12 text-gray-700 dark:text-gray-300;
+}
+
+.journalGrid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.journalsAction {
+  @apply mt-12 text-center;
+}
+
+// Timeline Section
+.timeline {
+  @apply bg-white dark:bg-gray-900;
+}
+
+.timelineContent {
+  @apply relative max-w-4xl mx-auto;
+  
+  &::before {
+    content: '';
+    @apply absolute left-0 md:left-1/2 top-0 h-full w-1 bg-red-600 transform md:translate-x-[-50%];
+  }
+}
+
+.timelineItem {
+  @apply relative flex flex-col md:flex-row md:justify-between mb-12 last:mb-0;
+  
+  &:nth-child(odd) {
+    @apply md:flex-row-reverse;
+    
+    .timelineDate {
+      @apply md:text-left md:pr-8;
+    }
+    
+    .timelineCard {
+      @apply md:mr-auto md:ml-0;
+      
+      &::before {
+        @apply md:left-auto md:right-[-10px] md:border-l-transparent md:border-r-white dark:md:border-r-gray-800;
+      }
+    }
+  }
+  
+  &:nth-child(even) {
+    .timelineDate {
+      @apply md:text-right md:pl-8;
+    }
+    
+    .timelineCard {
+      @apply md:ml-auto md:mr-0;
+      
+      &::before {
+        @apply md:right-auto md:left-[-10px] md:border-r-transparent md:border-l-white dark:md:border-l-gray-800;
+      }
+    }
+  }
+}
+
+.timelineDate {
+  @apply text-xl font-bold text-red-600 mb-2 md:mb-0 md:w-1/2;
+}
+
+.timelineCard {
+  @apply bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md md:w-[calc(50%-40px)] relative;
+  
+  &::before {
+    content: '';
+    @apply absolute top-4 left-[-10px] border-solid border-[10px] border-r-white dark:border-r-gray-800 border-t-transparent border-b-transparent border-l-transparent;
+  }
+  
+  h3 {
+    @apply text-xl font-bold mb-2;
+  }
+  
+  p {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+}
+
+// Subscription Section
+.subscription {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+.subscriptionContent {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-8 items-center;
+}
+
+.subscriptionText {
+  @apply space-y-6;
+}
+
+.subscriptionTitle {
+  @apply text-3xl font-bold;
+}
+
+.subscriptionDescription {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.subscriptionBenefits {
+  @apply space-y-2;
+  
+  li {
+    @apply flex items-center text-gray-700 dark:text-gray-300;
+    
+    &::before {
+      content: '✓';
+      @apply mr-2 text-red-600 font-bold;
+    }
+  }
+}
+
+.image {
+  @apply rounded-lg shadow-lg;
+}

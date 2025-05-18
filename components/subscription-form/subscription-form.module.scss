@@ -1,0 +1,59 @@
+.subscriptionForm {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-md p-6;
+}
+
+.formGroup {
+  @apply mb-4;
+}
+
+.formLabel {
+  @apply block text-sm font-medium mb-1;
+}
+
+.formInput {
+  @apply w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600;
+}
+
+.checkboxGroup {
+  @apply grid grid-cols-2 gap-2;
+}
+
+.checkbox {
+  @apply flex items-center text-sm;
+  
+  input {
+    @apply mr-2;
+  }
+  
+  a {
+    @apply text-red-600 dark:text-red-500 hover:underline;
+  }
+}
+
+.required {
+  @apply text-red-600;
+}
+
+.errorMessage {
+  @apply text-red-600 text-sm mb-4;
+}
+
+.submitButton {
+  @apply w-full bg-red-600 text-white py-3 rounded-md font-medium hover:bg-red-700 transition-colors duration-200 disabled:opacity-70 disabled:cursor-not-allowed;
+}
+
+.successMessage {
+  @apply text-center py-8;
+  
+  h3 {
+    @apply text-xl font-bold mb-2;
+  }
+  
+  p {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+}
+
+.successIcon {
+  @apply text-green-500 mx-auto mb-4;
+}

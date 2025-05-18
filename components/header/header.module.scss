@@ -1,0 +1,57 @@
+.header {
+  @apply sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md;
+}
+
+.container {
+  @apply mx-auto px-4 max-w-7xl;
+}
+
+.headerContent {
+  @apply flex items-center justify-between py-4;
+}
+
+.logo {
+  @apply z-20 relative;
+}
+
+.logoContainer {
+  @apply flex items-center gap-2;
+}
+
+.nav {
+  @apply fixed inset-0 bg-white dark:bg-gray-900 flex items-center justify-center transform translate-x-full transition-transform duration-300 ease-in-out md:static md:bg-transparent md:translate-x-0 md:transition-none;
+  
+  &.active {
+    @apply translate-x-0;
+  }
+}
+
+.navList {
+  @apply flex flex-col items-center space-y-6 md:flex-row md:space-y-0 md:space-x-8;
+  
+  li {
+    @apply text-lg md:text-base font-medium;
+    
+    a {
+      @apply text-gray-800 dark:text-gray-200 hover:text-red-600 dark:hover:text-red-500 transition-colors duration-200;
+    }
+  }
+}
+
+.headerActions {
+  @apply flex items-center space-x-4 z-20 relative;
+}
+
+.themeToggle {
+  @apply p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200;
+}
+
+.menuToggle {
+  @apply p-2 text-gray-700 dark:text-gray-300 md:hidden;
+}
+
+@screen md {
+  .nav {
+    @apply relative transform-none bg-transparent;
+  }
+}

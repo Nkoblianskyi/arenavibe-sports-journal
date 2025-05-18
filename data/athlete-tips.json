@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál es el secreto para alcanzar la cima en el deporte profesional?",
+    "answer": "La consistencia es más importante que la intensidad. Muchos atletas entrenan duro durante un tiempo y luego se queman. Lo que realmente marca la diferencia es mantener una rutina constante durante años, incluso cuando no ves resultados inmediatos. El talento te lleva hasta cierto punto, pero la disciplina diaria es lo que realmente te diferencia de los demás.",
+    "sport": "fútbol"
+  },
+  {
+    "id": 2,
+    "question": "¿Cómo debería ser la alimentación ideal para un deportista de élite?",
+    "answer": "La nutrición debe ser personalizada, no existe una dieta única para todos. Lo fundamental es entender que los alimentos son tu combustible. Yo consumo aproximadamente un 50% de carbohidratos complejos, 30% de proteínas y 20% de grasas saludables. La hidratación es tan importante como la comida sólida. Y lo más importante: la constancia en la alimentación marca más diferencia que las dietas extremas antes de competiciones.",
+    "sport": "natación"
+  },
+  {
+    "id": 3,
+    "question": "¿Qué papel juega la mente en el rendimiento deportivo?",
+    "answer": "La mente lo es todo. He visto atletas con capacidades físicas extraordinarias que nunca alcanzan su potencial por barreras mentales. Yo dedico al menos 30 minutos diarios a entrenar mi mente: visualización, meditación y establecimiento de objetivos. Cuando compito, el 80% del resultado depende de mi estado mental. La presión solo existe si tú permites que exista.",
+    "sport": "tenis"
+  },
+  {
+    "id": 4,
+    "question": "¿Cuál es la mejor técnica para mejorar la conducción en circuito?",
+    "answer": "La clave está en la mirada y la anticipación. Siempre mira hacia donde quieres ir, no donde estás. Muchos pilotos novatos cometen el error de mirar el obstáculo que quieren evitar, y acaban dirigiéndose hacia él. Además, la suavidad en los controles es fundamental: los movimientos bruscos desestabilizan el coche. Practica la técnica de frenada progresiva: fuerte al inicio y suave al final.",
+    "sport": "automovilismo"
+  },
+  {
+    "id": 5,
+    "question": "¿Cómo manejas la presión en los momentos decisivos?",
+    "answer": "He aprendido a redefinir la presión como un privilegio. Sentir presión significa que estás haciendo algo importante. Técnicamente, uso respiración controlada: 4 segundos inhalando, 7 segundos reteniendo, 8 segundos exhalando. Esto activa el sistema nervioso parasimpático. También tengo una rutina pre-competición invariable que me da seguridad y me centra en el proceso, no en el resultado.",
+    "sport": "baloncesto"
+  }
+]

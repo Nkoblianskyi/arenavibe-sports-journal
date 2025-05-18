@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {
+      "title": "Introducción",
+      "content": "Fútbol Total es nuestra revista insignia dedicada al deporte rey. Cubrimos todas las competiciones importantes desde La Liga hasta la Champions League, pasando por las principales competiciones internacionales."
+    },
+    {
+      "title": "Contenido habitual",
+      "items": [
+        "Análisis tácticos de los partidos más importantes",
+        "Entrevistas exclusivas con jugadores y entrenadores",
+        "Reportajes en profundidad sobre clubes históricos",
+        "Seguimiento de jóvenes promesas",
+        "Estadísticas avanzadas y análisis de rendimiento"
+      ]
+    },
+    {
+      "title": "Nuestro enfoque",
+      "content": "En Fútbol Total combinamos la pasión por el fútbol con un análisis riguroso. Nuestro equipo incluye ex jugadores y entrenadores que aportan una visión única del juego."
+    },
+    {
+      "title": "Periodicidad",
+      "content": "Cada mes nuestros lectores disfrutan de más de 100 páginas de contenido premium sobre el deporte rey con fotografías de alta calidad y diseño cuidado al detalle."
+    }
+  ]
+}

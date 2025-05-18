@@ -1,0 +1,154 @@
+.tipsSection {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.tipsIntro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.tipsGrid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.tipCard {
+  position: relative;
+  
+  &.even {
+    align-self: flex-start;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -20px;
+      width: 40px;
+      height: 40px;
+      background-color: #e63946;
+      transform: translateY(-50%) rotate(45deg);
+      z-index: 0;
+      
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    
+    .tipContent {
+      border-right: 5px solid #e63946;
+      
+      @media (max-width: 768px) {
+        border-right: none;
+        border-left: 5px solid #e63946;
+      }
+    }
+  }
+  
+  &.odd {
+    align-self: flex-end;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      width: 40px;
+      height: 40px;
+      background-color: #1d3557;
+      transform: translateY(-50%) rotate(45deg);
+      z-index: 0;
+      
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    
+    .tipContent {
+      border-left: 5px solid #1d3557;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    width: 70%;
+    
+    &.even {
+      margin-right: auto;
+    }
+    
+    &.odd {
+      margin-left: auto;
+    }
+  }
+}
+
+.tipContent {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  z-index: 1;
+}
+
+.tipQuestion {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+  position: relative;
+  
+  &::before {
+    content: '?';
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.05);
+    font-weight: 900;
+  }
+  
+  .odd & {
+    color: #1d3557;
+  }
+  
+  .even & {
+    color: #e63946;
+  }
+}
+
+.tipAnswer {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  font-style: italic;
+  position: relative;
+  margin: 0;
+  
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.tipSport {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: normal;
+  text-align: right;
+  font-weight: 600;
+  
+  .odd & {
+    color: #1d3557;
+  }
+  
+  .even & {
+    color: #e63946;
+  }
+}

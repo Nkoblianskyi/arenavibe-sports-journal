@@ -1,0 +1,253 @@
+.historyPage {
+  padding: 3rem 0;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.pageIntro {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.timelineContainer {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background-color: #e63946;
+    transform: translateX(-50%);
+    
+    @media (max-width: 768px) {
+      left: 30px;
+    }
+  }
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 4rem;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  &:nth-child(odd) {
+    .timelineContent {
+      margin-left: auto;
+      
+      @media (max-width: 768px) {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 80px;
+      }
+    }
+    
+    .timelineIconWrapper {
+      left: calc(50% - 30px);
+      
+      @media (max-width: 768px) {
+        left: 0;
+      }
+    }
+  }
+  
+  &:nth-child(even) {
+    .timelineContent {
+      margin-right: auto;
+      text-align: right;
+      
+      @media (max-width: 768px) {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 80px;
+        text-align: left;
+      }
+    }
+    
+    .timelineIconWrapper {
+      right: calc(50% - 30px);
+      
+      @media (max-width: 768px) {
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+}
+
+.timelineIconWrapper {
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 4px #e63946, 0 0 0 8px rgba(230, 57, 70, 0.2);
+  z-index: 2;
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 4px #e63946, 0 0 0 8px rgba(230, 57, 70, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 0 4px #e63946, 0 0 0 12px rgba(230, 57, 70, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 0 4px #e63946, 0 0 0 8px rgba(230, 57, 70, 0.2);
+    }
+  }
+  
+  animation: pulse 3s infinite;
+}
+
+.timelineIcon {
+  width: 30px;
+  height: 30px;
+  color: #e63946;
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  animation: spin 3s ease-in-out infinite;
+}
+
+.timelineContent {
+  position: relative;
+  width: 45%;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #e63946;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    transform: rotate(45deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timelineItem:nth-child(odd) & {
+    &::before {
+      left: -10px;
+      
+      @media (max-width: 768px) {
+        left: 70px;
+      }
+    }
+  }
+  
+  .timelineItem:nth-child(even) & {
+    &::before {
+      right: -10px;
+      
+      @media (max-width: 768px) {
+        right: auto;
+        left: 70px;
+      }
+    }
+  }
+}
+
+.visionMission {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.visionBox,
+.missionBox {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+  }
+}
+
+.visionBox {
+  background-color: #f8f9fa;
+  border-left: 5px solid #e63946;
+  
+  h2 {
+    color: #e63946;
+  }
+}
+
+.missionBox {
+  background-color: #f8f9fa;
+  border-right: 5px solid #1d3557;
+  
+  h2 {
+    color: #1d3557;
+  }
+}

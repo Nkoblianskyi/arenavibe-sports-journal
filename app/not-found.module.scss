@@ -1,0 +1,43 @@
+.notFoundPage {
+  @apply py-16 min-h-screen flex items-center;
+}
+
+.notFoundContent {
+  @apply max-w-2xl mx-auto text-center;
+}
+
+.notFoundImage {
+  @apply mb-6 flex justify-center;
+}
+
+.notFoundTitle {
+  @apply text-8xl font-bold text-red-600 dark:text-red-500 mb-4;
+}
+
+.notFoundSubtitle {
+  @apply text-3xl font-bold mb-4;
+}
+
+.notFoundText {
+  @apply text-xl text-gray-700 dark:text-gray-300 mb-8;
+}
+
+.notFoundActions {
+  @apply flex flex-wrap justify-center gap-4 mb-12;
+}
+
+.notFoundSuggestions {
+  @apply mt-8 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg inline-block;
+  
+  h3 {
+    @apply font-bold mb-4;
+  }
+  
+  ul {
+    @apply space-y-2;
+    
+    li a {
+      @apply text-red-600 dark:text-red-500 hover:underline;
+    }
+  }
+}
