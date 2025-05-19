@@ -19,9 +19,9 @@
   },
   {
     "id": 3,
-    "title": "F1 Racing",
-    "slug": "f1-racing",
-    "description": "La revista líder en Fórmula 1 y deportes de motor",
+    "title": "Racing",
+    "slug": "racing",
+    "description": "La revista líder en Fórmula y deportes de motor",
     "coverImage": "/formula-1-magazine-cover.png",
     "frequency": "Mensual",
     "price": 5.99
