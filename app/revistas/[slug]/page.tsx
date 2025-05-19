@@ -58,7 +58,7 @@ export default async function JournalPage({ params }: JournalPageProps) {
               <div className={styles.metaItem}>
               </div>
             </div>
-            <button className={styles.subscribeButton}>Suscribirse</button>
+            <Link href="/contacto" className={styles.subscribeButton}>Suscribirse</Link>
           </div>
         </div>
 
